@@ -108,3 +108,9 @@ table th {
     border-radius: 50%;
     color: #fff;  
 }
+
+.remove {
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+}

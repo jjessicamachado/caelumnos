@@ -32,7 +32,7 @@
             <h3>Cadastro de Alunos</h3>
 
             <div class="box">
-                <form>
+                <form id="cadastro-aluno">
                     <label for="matricula">
                         Matricula:
                     </label>
@@ -61,18 +61,23 @@
                         <th></th>
                     </tr>
 
-                    <tr>
-                        <td>0001</td>
-                        <td>Jessica</td>
-                        <td><button><i class="fas fa-trash"></i></button></td>
-                    </tr>
+                    <tbody id="lista-alunos">
+                        <tr id="listagem-tr" class="tr-aluno-tabela">
+                            <td>0001</td>
+                            <td class="nome">Jessica</td>
+                            <td><button class="remove"><i class="fas fa-trash"></i></button></td>
+                        </tr>
+                    </tbody>
                 </table>
             </div>
 
         </section>
 
     </main>
-
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/pegarDados.js"></script>
+    <script src="js/removerAluno.js"></script>
+    <script src="js/editarNome.js"></script>
 </body>
 
 </html>
