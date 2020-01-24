@@ -8,11 +8,9 @@ form.addEventListener('submit', function (e) {
     e.preventDefault()
     if (matricula.value.trim().length === 0 && nome.value.trim().length === 0) {
         alert('Preencha todos os campos!')
-    } else {
+    } else if (confirm ("Deseja adicionar o aluno " + nome.value + " na tabela?")) {
         const matriculaAluno = matricula.value
         const nomeAluno = nome.value
-
-        console.log("Foi")
 
         const novaTr = document.createElement('tr')
         novaTr.classList.add('tr-aluno-tabela')
@@ -25,7 +23,7 @@ form.addEventListener('submit', function (e) {
         tdNome.classList.add('nome')
 
         const tdLixo = document.createElement('td') 
-        tdLixo.innerHTML = '<button class="remove"><i class="fas fa-trash"></i></button>'
+        tdLixo.innerHTML = '<button class="remove"><i class="fas fa-trash remove"></i></button>'
 
         novaTr.appendChild(tdMatricula)
         novaTr.appendChild(tdNome)
