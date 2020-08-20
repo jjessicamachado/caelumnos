@@ -1,2 +1,2 @@
 # caelumnos
-Projeto de javascript moderno
+Projeto desafio de javascript passado no curso da Caelum 
